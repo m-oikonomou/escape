@@ -1,0 +1,11 @@
+<div>
+    <h3>What does this weird picture say?</h3>
+    <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-03/15/17/enhanced/buzzfeed-prod-fastlane-03/enhanced-18318-1489611641-6.jpg?downsize=600:*&output-format=auto&output-quality=auto">
+    <br><br>
+    <input type="text" id="portrait" class="form-control" 
+    style="width: 22%; display: inline-block;" required
+    [value]="portrait">
+    <button class="btn" type="button" (click)="onCheck(portrait)">Check</button>
+    <br>
+    <p>{{ text }}</p>
+</div>

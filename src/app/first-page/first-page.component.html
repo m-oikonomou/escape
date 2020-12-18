@@ -1,0 +1,25 @@
+<div class="container page">
+    <form>
+        <h2>Oh well, excuse my forgeting.</h2>
+        <h3>You will need to enter your credentials in order to continue.</h3>
+        <br>
+        <div>
+            <label for="username">Username &nbsp;&nbsp;</label>
+            <input type="text" id="username" class="form-control" 
+            style="width: 22%; display: inline-block;" required
+            [value]="userName">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password &nbsp;&nbsp;</label>
+            <input type="text" id="password" class="form-control" 
+            style="width: 22%; display: inline-block;" required
+            [value]="passWord">
+        </div>
+        <br><br>
+        <button class="btn" type="button" routerLink="/app-second-page" [disabled]="!userName && !passWord">Verify</button>
+    </form>
+</div>
+<div class="hidden-square">
+    <p style="cursor: pointer;" (click)="onFoundMe()">Find me</p>
+</div>
